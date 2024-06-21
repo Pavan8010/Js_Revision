@@ -1,25 +1,32 @@
-// primitive
-// string,number,null,undefined,boolean,BigInt,Symbol
-const score = 100
-const scoreValue = 100.3
+const name = "hitesh"
+const repoCount = 50
+// console.log(name + repoCount + " Value");
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail;
+// console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
-// Although you gave the same value it will be different 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+const gameName = new String('hitesh-hc-com')
 
-// console.log(id === anotherId); // false
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+// console.log(gameName.charAt(2));
+// console.log(gameName.indexOf('t'));
 
-const bigNumber = 3456543576654356754n
+const newString = gameName.substring(0, 4)
+console.log(newString);
 
+const anotherString = gameName.slice(-8, 4)
+console.log(anotherString);
 
-// non-primitive(Reference)
-// Object , Array , Function
+const newStringOne = "   hitesh    "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
-let fn = function(){
-    console.log("d");
-}
-fn();
+const url = "https://hitesh.com/hitesh%20choudhary"
+
+console.log(url.replace('%20', '-'))
+
+console.log(url.includes('sundar'))
+
+console.log(gameName.split('-'));
